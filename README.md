@@ -31,3 +31,9 @@ document.addEventListener('mousemove', horizontalDirector(function(){
 document.addEventListener('mouseup', horizontalDirector.reset);
 
 ```
+
+## Settings
+
+ - `settings.magnitude`: How far a stream of events must move before deciding whether they are valid or not.
+
+ - `settings.getPosition`: A function that takes the handler input (usually `event`) and returns a componant vector `{x, y}`

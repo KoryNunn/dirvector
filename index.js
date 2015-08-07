@@ -11,12 +11,12 @@ function dirvector(validator, settings){
         previousPosition,
         netVector;
 
-    function getPosition(event){
+    var getPosition = settings.getPosition || function(event){
         return {
-            x: event.x,
-            y: event.y
+            x: event.x != null ? event.x : event.pageX,
+            y: event.y != null ? event.y : event.pageY
         };
-    }
+    };
 
     var filter = function(handler){
         return function handleEvent(event){
