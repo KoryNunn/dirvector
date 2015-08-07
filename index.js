@@ -66,14 +66,15 @@ dirvector.horizontal = function(vector){
     var quarterPI = Math.PI / 4,
         PI = Math.PI;
 
+
     return (
         (
-            (PI + vector.direction) % PI < quarterPI &&
-            (PI + vector.direction) % PI > -quarterPI
+            vector.direction < quarterPI &&
+            vector.direction > -quarterPI
         ) ||
         (
-            (PI + vector.direction) % PI > quarterPI*3 &&
-            (PI + vector.direction) % PI < -quarterPI*3
+            vector.direction > quarterPI*3 ||
+            vector.direction < -quarterPI*3
         )
     );
 };
