@@ -1,7 +1,7 @@
 {
   "name": "dirvector",
   "version": "1.0.0",
-  "description": "",
+  "description": "Only allow events to a handler if the gesture is headding in a certain direction.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,5 +11,17 @@
   "license": "ISC",
   "dependencies": {
     "math-js": "^1.0.0"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoryNunn/dirvector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/dirvector/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/dirvector#readme"
 }
